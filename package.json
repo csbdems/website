@@ -1,0 +1,8 @@
+{
+  "name": "cdsbc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:slifty/cdsbc.git",
+  "author": "Dan Schultz <slifty@gmail.com>",
+  "license": "MIT"
+}
