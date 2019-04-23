@@ -1,0 +1,153 @@
+/*
+ Theme Name:   CDSBC Campaign Theme
+ Theme URI:    https://csbdemocrats.com
+ Description:  The Cheltenham School Board Democrats 2017 campaign page
+ Author:       Dan Schultz
+ Author URI:   http://slifty.com
+ Version:      1.0.0
+ License:
+ License URI:
+ Tags:         political, campaign
+ Text Domain:  cdsbc
+*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+ul {
+	padding: 0px;
+}
+li {
+	list-style: none;
+	margin: 0px;
+}
+
+strong {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.bio-bullets li, .volunteer-list li {
+	list-style: disc;
+	margin-left: 20px;
+}
+
+nav [data-toggle="collapse"].collapsed .if-not-collapsed {
+  display: none;
+}
+nav [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+  display: none;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+
+#title {
+	background-color: #0061A7;
+	color: #fff;
+}
+
+#group-photo {
+	background: #E3A735;
+}
+
+#group-photo img {
+	width: 100%;
+	max-width: 600px;
+}
+#group-names {
+	width: 100%;
+	margin: auto;
+	max-width: 1080px;
+	background-color: #0061A7;
+}
+#group-names .candidate-name h3 {
+	padding-bottom: 0px;
+}
+
+.date h4 {
+	margin-top: 40px;
+	margin-bottom: 0px;
+}
+hr {
+	height: 1px;
+	background: #E3A735;
+}
+
+#letter {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #DEDEEE;
+	padding: 20px;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+}
+
+.candidate-headshot img {
+	width: 100%;
+}
+
+.header {
+	background-color: #E3A735;
+	color: #fff;
+	margin-bottom: 20px;
+	padding: 5px 0px;
+}
+.header h2 {
+	margin: 0px;
+}
+
+.candidate-name h3 {
+	font-size: 20px;
+	margin-top: 0px;
+	padding: 10px 0px;
+	background-color: #0061A7;
+	color: #fff;
+}
+.candidate-name .last-name {
+	font-size: 20px;
+	display: block;
+}
+.candidate-name a {
+	text-decoration: none;
+
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	h2 {
+		font-size: 20px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	h2 {
+		font-size: 36px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	h1 {
+		margin: 10px;
+	}
+	h1 {
+		font-size: 28px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
