@@ -1,20 +1,9 @@
-/*
- Theme Name:   CDSBC Campaign Theme
- Theme URI:    https://csbdemocrats.com
- Description:  The Cheltenham School Board Democrats 2017 campaign page
- Author:       Dan Schultz
- Author URI:   http://slifty.com
- Version:      1.0.0
- License:
- License URI:
- Tags:         political, campaign
- Text Domain:  cdsbc
-*/
-
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-family: 'PT Serif', serif;
 	padding-bottom: 20px;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto Condensed', sans-serif;
 }
 ul {
 	padding: 0px;
@@ -23,96 +12,379 @@ li {
 	list-style: none;
 	margin: 0px;
 }
-
 strong {
 	font-weight: bold;
-	text-decoration: underline;
+}
+a, a:hover, a:active, a:visited, a:focus {
+	text-decoration: none
+}
+h2 {
+	font-size: 32px;
+}
+p {
+	font-size: 21px;
+	margin-top: 20px;
+}
+@media (min-width: 992px) {
+	h2 {
+		font-size: 42px;
+	}
+	p {
+		font-size: 21px;
+		margin-top: 20px;
+	}
 }
 
-.bio-bullets li, .volunteer-list li {
+em {
+	font-style: normal;
+	border-bottom: 3px solid #FFCF56;
+	display: inline-block;
+}
+
+#menu {
+	background: #03256C;
+}
+#menu a {
+	text-decoration: none;
+}
+
+#logo {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height:24px;
+	padding: 10px 0px;
+	font-size: 18px;
+}
+#logo a {
+	color: #fff;
+}
+@media (min-width: 992px) {
+	#logo {
+		font-family: 'Roboto Condensed', sans-serif;
+		line-height:24px;
+		padding-top: 18px;
+		width: 250px;
+		margin-left: 20px;
+		font-size: 24px;
+	}
+}
+#main-nav {
+	font-size: 18px;
+}
+#main-nav a {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #fff;
+  display:block;
+}
+#main-nav a:hover {
+	color: #03256C;
+	background: #FFCF56;
+}
+@media (min-width: 992px) {
+	#main-nav {
+		font-size: 24px;
+	}
+	#main-nav a {
+	  padding: 25px 0px;
+	}
+}
+#donate-button {
+	border: 2px solid #FFCF56;
+	background: #FFCF56;
+	color: #03256C;
+	border-radius: 15px;
+	padding: 10px 5px;
+	margin: 13px 0px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover #donate-button {
+	color: #FFCF56;
+	background: #03256C;
+}
+#opening-tagline {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+#opening-tagline h1 {
+	font-weight: bold;
+	color: #03256C;
+}
+#headshots .headshot img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 1px solid black;
+	object-fit: cover;
+	object-position: top;
+}
+#headshots .name {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 18px;
+	color: #03256C;
+}
+#headshots {
+	padding-bottom: 20px;
+	max-width: 1600px;
+	margin: auto;
+}
+.next-section {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 24px;
+	color: #03256C;
+	padding-bottom: 10px;
+	margin: auto;
+}
+.next-section a {
+	color: #03256C;
+}
+.next-section-text {
+	border-bottom: 2px solid #FACB54;
+}
+@media (min-width: 992px) {
+	#opening-tagline {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	#front-page-headshots .headshot img {
+		height: 180px;
+		width: 180px;
+		object-fit: cover;
+		object-position: top;
+	}
+	#front-page-headshots {
+		padding-bottom: 60px;
+	}
+	.next-section {
+		font-size: 24px;
+		padding-bottom: 20px;
+	}
+	.next-section-text {
+		border-bottom: 3px solid #FACB54;
+	}
+}
+
+.section {
+	max-width: 1600px;
+	margin: auto;
+}
+@media (min-width: 992px) {
+	.section {
+		padding: 0px 100px;
+	}
+}
+
+#front-page-message {
+	background: #2541B2;
+	color: #fff;
+}
+#front-page-message h2 {
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 24px;
+	padding: 20px 0px;
+}
+#front-page-message p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+#our-values-link {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	color: #FFCF56;
+	border-bottom: 2px solid #FFCF56;
+	float: right;
+	margin-top: 00px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 3px;
+}
+#our-values-link .link-text {
+	font-size: 25px;
+	font-style: italic;
+	font-weight: bold;
+	margin-right: 10px;
+}
+@media (min-width: 992px) {
+	#front-page-message h2 {
+		font-weight: bold;
+		font-size: 50px;
+		padding: 80px 0px;
+	}
+	#front-page-message p {
+		padding-right: 100px;
+		font-size: 32px;
+		margin-bottom: 40px;
+	}
+	#our-values-link {
+		font-size: 35px;
+		float: right;
+		margin-top: 70px;
+		margin-bottom: 70px;
+		padding-bottom: 5px;
+	}
+	#our-values-link .link-text {
+		font-size: 40px;
+		margin-right: 10px;
+	}
+}
+
+#front-page-who-we-are h2 {
+	font-weight: bold;
+	color: #03256C;
+	font-size: 32px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#front-page-who-we-are p {
+	color: #03256C;
+	font-size: 22px;
+}
+#front-page-who-we-are .group-photo {
+	margin: auto;
+	text-align: center;
+}
+#front-page-who-we-are .group-photo img {
+	width: 100%;
+	margin: auto;
+}
+#meet-the-candidates-link {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	color: #2541B2;
+	border-bottom: 2px solid #2541B2;
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 3px;
+}
+#meet-the-candidates-link .link-text {
+	font-size: 25px;
+	font-style: italic;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+@media (min-width: 992px) {
+	#front-page-who-we-are h2 {
+		font-size: 42px;
+		margin-top: 180px;
+		margin-left: 10px;
+		margin-bottom: 40px;
+	}
+	#front-page-who-we-are p {
+		font-size: 21px;
+		margin-top: 20px;
+		margin-left: 10px;
+	}
+	#front-page-who-we-are .group-photo {
+		margin: 80px 20px;
+	}
+	#front-page-who-we-are .group-photo img {
+		width: 700px;
+	}
+	#meet-the-candidates-link {
+		font-size: 28px;
+		float: right;
+		margin-bottom: 70px;
+		padding-bottom: 5px;
+	}
+	#meet-the-candidates-link .link-text {
+		font-size: 34px;
+		margin-right: 10px;
+	}
+}
+
+#footer {
+	background-color: #2541B2;
+	color: #fff;
+	margin-top: 50px;
+}
+#footer a {
+	color: #FFCF56;
+}
+
+#values h1 {
+	text-align: center;
+	font-weight: bold;
+	color: #03256C;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#values p {
+	color: #03256C;
+	margin-top: 0px;
+	font-size: 16px;
+}
+#values h2 {
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #03256C;
+}
+
+@media (min-width: 992px) {
+	#values h1 {
+		font-size: 50px;
+		margin-bottom: 40px;
+	}
+	#values p {
+		margin-top: 0px;
+		font-size: 20px;
+	}
+	#values h2 {
+		margin-top: 50px;
+		font-size: 24px;
+	}
+}
+
+#candidates h1 {
+	text-align: center;
+	font-weight: bold;
+	color: #03256C;
+	font-size: 50px;
+	margin-bottom: 40px;
+}
+
+#candidates p {
+	font-size: 14px;
+	margin-top: 14px;
+}
+
+#candidates li {
 	list-style: disc;
 	margin-left: 20px;
 }
-
-nav [data-toggle="collapse"].collapsed .if-not-collapsed {
-  display: none;
-}
-nav [data-toggle="collapse"]:not(.collapsed) .if-collapsed {
-  display: none;
-}
-.navbar {
-	margin-bottom: 0px;
+#candidates ul {
+	margin-top: 14px;
 }
 
-#title {
-	background-color: #0061A7;
-	color: #fff;
+@media (min-width: 992px) {
+	#candidates p {
+		margin-top: 10px;
+		font-size: 16px;
+	}
 }
 
-#group-photo {
-	background: #E3A735;
+#events h1 {
+	text-align: center;
+	font-weight: bold;
+	color: #03256C;
+	font-size: 50px;
+	margin-bottom: 40px;
 }
 
-#group-photo img {
-	width: 100%;
-	max-width: 600px;
-}
-#group-names {
-	width: 100%;
-	margin: auto;
-	max-width: 1080px;
-	background-color: #0061A7;
-}
-#group-names .candidate-name h3 {
-	padding-bottom: 0px;
-}
-
-.date h4 {
-	margin-top: 40px;
-	margin-bottom: 0px;
-}
-hr {
-	height: 1px;
-	background: #E3A735;
-}
-
-#letter {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background: #DEDEEE;
-	padding: 20px;
-	font-family: 'Permanent Marker', cursive;
-	font-size: 24px;
-}
-
-.candidate-headshot img {
-	width: 100%;
-}
-
-.header {
-	background-color: #E3A735;
-	color: #fff;
-	margin-bottom: 20px;
-	padding: 5px 0px;
-}
-.header h2 {
-	margin: 0px;
-}
-
-.candidate-name h3 {
+#events h2 {
+	margin-top: 30px;
+	font-weight: bold;
 	font-size: 20px;
-	margin-top: 0px;
-	padding: 10px 0px;
-	background-color: #0061A7;
-	color: #fff;
+	color: #03256C;
 }
-.candidate-name .last-name {
-	font-size: 20px;
-	display: block;
-}
-.candidate-name a {
-	text-decoration: none;
 
+#events .event img {
+	width: 100%;
 }
 
 
