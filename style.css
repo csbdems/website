@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	font-family: 'PT Serif', serif;
 	padding-bottom: 20px;
