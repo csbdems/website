@@ -32,7 +32,7 @@
 	</div>
 	<div class="col-xs-6 col-sm-6 col-lg-2 text-center">
 		<HeadshotCard
-			href="/candidates#dan"
+			href="/candidates#daniel"
 			imgSrc="/img/candidates/daniel.jpg"
 			name="Daniel Schultz"
 		/>
