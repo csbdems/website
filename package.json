@@ -21,9 +21,6 @@
 		"format:eslint": "eslint ./src --fix || true",
 		"format:prettier": "prettier . --write"
 	},
-	"dependencies": {
-		"@sveltejs/vite-plugin-svelte": "^5.0.3"
-	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
